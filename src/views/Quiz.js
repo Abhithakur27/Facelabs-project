@@ -36,3 +36,13 @@ onChangeName = (e) => {
     name: e.target.value,
   });
 };
+
+startQuiz = () => {
+  if (this.state.name.trim().length === 0) {
+    // user doesno't fill anything
+  } else {
+    this.setState({
+      openNameModal: false,
+    });
+  }
+};
