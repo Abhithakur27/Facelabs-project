@@ -1,0 +1,17 @@
+.img {
+  background-image: url("../../Image/head.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+}
+
+body {
+  background: #eee;
+}
+.container {
+  padding: 5%;
+}
+.lead {
+  background: #fff;
+  padding: 4%;
+}
