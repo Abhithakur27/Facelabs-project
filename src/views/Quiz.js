@@ -46,3 +46,19 @@ startQuiz = () => {
     });
   }
 };
+
+handleSubmitQuestion = (e) => {
+  let correct_answer = this.state.questions[this.state.questionNo][
+    "correct_answer"
+  ];
+  if (e.target.id == correct_answer) {
+    this.state.score += 1;
+    e.target.classList.add("border-success");
+  } else {
+    e.target.classList.add("border-danger");
+  }
+
+  // Color the correct answer
+
+  //enable next questions
+};
