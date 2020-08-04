@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { StaticModal } from "../containers/StaticModal";
-import PopulateQuestion from "../containers/PopulateQuestion";
+import PopulateQuestion from "../containers/PopularQuestion";
 import SuccesfulScore from "../containers/SuccesfulScore";
 
 import axios from "axios";
@@ -9,7 +9,7 @@ export default class Quiz extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      openNameModal: false,
+      openNameModal: true,
       name: "",
       questions: [],
       score: 0,
