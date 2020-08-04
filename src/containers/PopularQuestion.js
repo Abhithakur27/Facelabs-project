@@ -45,6 +45,27 @@ export default function PopulateQuestion(props) {
                     </Card>
                   );
                 })}
+                {props.questionNo == props.totalQuestions - 1 ? (
+                  <div>
+                    <Button
+                      variant="primary"
+                      onClick={props.nextQuestion}
+                      disabled={!props.enableNext}
+                    >
+                      Finish
+                    </Button>
+                  </div>
+                ) : (
+                  <div>
+                    <Button
+                      variant="primary"
+                      onClick={props.nextQuestion}
+                      disabled={!props.enableNext}
+                    >
+                      Next
+                    </Button>
+                  </div>
+                )}
               </div>
             </div>
           </Card.Body>
