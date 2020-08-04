@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { StaticModal } from "../containers/StaticModal";
-import PopulateQuestion from "../containers/PopulateQuestion";
-import SuccesfulScore from "../containers/SuccesfulScore";
+
 import axios from "axios";
 
 export default class Quiz extends Component {
@@ -31,3 +30,9 @@ export default class Quiz extends Component {
       .catch((err) => console.error("Error in fetching qustions", err));
   };
 }
+
+onChangeName = (e) => {
+  this.setState({
+    name: e.target.value,
+  });
+};
