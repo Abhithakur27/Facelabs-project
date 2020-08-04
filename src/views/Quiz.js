@@ -139,7 +139,10 @@ export default class Quiz extends Component {
         </div>
         {this.state.questionNo == this.state.totalQuestions ? (
           <div>
-            <SuccesfulScore totalQuestions={this.state.totalQuestions} />
+            <SuccesfulScore
+              score={this.state.score}
+              totalQuestions={this.state.totalQuestions}
+            />
           </div>
         ) : (
           <div></div>
