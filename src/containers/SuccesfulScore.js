@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import "../assets/css/style.css";
+import headerImg from "../Image/head.png";
+import Image from "react-bootstrap/Image";
 
 export default function SuccesfulScore(props) {
   return (
     <div>
       <div className="container-fluid">
+        <Image src={headerImg} fluid />
         <div className="page-wrap d-flex flex-row align-items-center">
           <div className="container">
             <div className="row justify-content-center">
