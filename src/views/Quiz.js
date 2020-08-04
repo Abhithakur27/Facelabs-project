@@ -76,6 +76,7 @@ export default class Quiz extends Component {
       },
     });
   };
+
   shuffleOptions = (array) => {
     // Create a copy of the original array to be randomized
     let shuffle = [...array];
@@ -136,6 +137,13 @@ export default class Quiz extends Component {
             shuffleOptionsValue={this.state.shuffleOptions}
           />
         </div>
+        {this.state.questionNo == this.state.totalQuestions ? (
+          <div>
+            <SuccesfulScore totalQuestions={this.state.totalQuestions} />
+          </div>
+        ) : (
+          <div></div>
+        )}
       </>
     );
   }
