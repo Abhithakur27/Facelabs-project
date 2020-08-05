@@ -17,7 +17,8 @@ export default function SuccesfulScore(props) {
                 </span>
                 <div className="mb-4 lead">
                   <h3>
-                    you Score Out of {props.score} / {props.totalQuestions}
+                    Hi {props.name} you Score Out of {props.score} /{" "}
+                    {props.totalQuestions}
                   </h3>
                 </div>
               </div>

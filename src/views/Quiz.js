@@ -141,6 +141,7 @@ export default class Quiz extends Component {
           <div>
             <SuccesfulScore
               score={this.state.score}
+              name={this.state.name}
               totalQuestions={this.state.totalQuestions}
             />
           </div>
