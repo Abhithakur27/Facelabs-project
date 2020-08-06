@@ -24,8 +24,9 @@ export default function PopulateQuestion(props) {
   return (
     <div className="container-fluid">
       <Image src={headerImg} fluid />
+
       <div className="d-flex justify-content-center align-item-center">
-        <Card className="w-50">
+        <Card className="100">
           <Card.Body>
             <div>
               <span className="font-weight-bold">
